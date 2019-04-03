@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav_logo">
+          <img class="main-nav_logo-image" src="http://placehold.it/150x100" alt="Mishka">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--search" href="#">
+                <img class="user-list__link-image" src="http://placehold.it/150x100" alt="Search">
+                <span class="user-list__link-text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                <img class="user-list__link-image" src="http://placehold.it/150x100" alt="Cart">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main-form">
+      <header class="page-main-form__header">
+        <h1 class="page-main-form__title">Вязание на заказ</h1>
+      </header>
+
+      <form class="form-quiz" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form-quiz_description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+          простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+
+        <fieldset class="form-quiz__fieldset quiz__fieldset--type">
+          <legend class="form-quiz__legend">Тип</legend>
+          <ul class="form-quiz__list">
+            <li class="form-quiz__item">
+              <input class="form-quiz__radio visually-hidden" type="radio" id="interior" name="type" value="1"
+                checked>
+              <label class="form-quiz__label-radio" for="interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="form-quiz__item">
+              <input class="form-quiz__radio visually-hidden" type="radio" id="toy" value="2" name="type">
+              <label class="form-quiz__label-radio" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-quiz__fieldset quiz__fieldset--color">
+          <legend class="form-quiz__legend">Цвет</legend>
+          <ul class="form-quiz__list form-quiz__list--color">
+            <li class="form-quiz__item">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-white" name="color-white"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-white">Белый</label>
+            </li>
+            <li class="form-quiz__item">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-gray" name="color-gray"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-gray">Серый</label>
+            </li>
+            <li class="form-quiz__item">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-tiffany" name="color-tiffany"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="form-quiz__item form-quiz__item--color">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-black" name="color-black"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-black">Черный</label>
+            </li>
+            <li class="form-quiz__item form-quiz__item--color">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-pink" name="color-pink"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-pink">Розовый</label>
+            </li>
+            <li class="form-quiz__item form-quiz__item--color">
+              <input class="form-quiz__checkbox visually-hidden" type="checkbox" id="color-orange" name="color-orange"
+                checked>
+              <label class="form-quiz__label-checkbox" for="color-orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__icon" src="http://placehold.it/150x100" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+
+  </body>

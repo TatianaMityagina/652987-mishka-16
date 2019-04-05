@@ -99,6 +99,42 @@
             </li>
           </ul>
         </fieldset>
+
+        <fieldset class="form-order__fieldset form-order__fieldset--name">
+          <legend class="form-order__legend">ФИО</legend>
+          <ul class="form-order__list form-order__list--name">
+            <li class="form-order__item">
+              <label class="form-order__label" for="firstname">Имя:</label>
+              <input class="form-order__input-text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="lastname">Фамилия:</label>
+              <input class="form-order__input-text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*">
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="middlename">Отчество:</label>
+              <input class="form-order__input-text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-order__fieldset form-order__fieldset--phone">
+          <label class="form-order__legend" for="phone">Тел</label>
+          <input class="form-order__input-text form-order__input-text--phone" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+
+        <fieldset class="form-order__fieldset form-order__fieldset--email">
+          <label class="form-order__legend" for="email">E-mail</label>
+          <input class="form-order__input-text form-order__input-text--email" type="email" id="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+
+        <fieldset class="form-order__fieldset form-order__fieldset--message">
+          <label class="form-order__legend" for="message">Доп</label>
+          <textarea class="form-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+
+        <p class="form-order__rule">*Поля обязательны для заполнения</p>
+        <button class="form-order__button button" type="submit">Отправить заказ</button>
       </form>
     </main>
 

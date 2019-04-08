@@ -1,0 +1,78 @@
+.weekly-goods {
+  position: relative;
+
+  padding: 32px 0 36px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -29px;
+
+    height: 7px;
+    width: 320px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+
+
+  }
+}
+
+.weekly-goods__header {
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.weekly-goods__title {
+  margin: 0;
+  padding: 0 0 4px 0;
+}
+
+.headline {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.weekly-goods__note {
+  padding: 0;
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $green-primary;
+  text-transform: uppercase;
+}
+
+.weekly-goods__description {
+  margin: 0 0 32px 0;
+}
+
+.weekly-goods__table {
+  margin: 0 0 28px 0;
+  padding: 0;
+  width: 260px;
+}
+
+.weekly-goods__image {
+  margin: 0 0 27px 0;
+  padding: 0;
+}
+
+.weekly-goods__price {
+  padding: 0;
+  margin: 0 0 28px 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $gray-primary;
+  text-align: center;
+}
+
+.weekly-goods__button {
+  margin: 0 0 36px 0;
+}

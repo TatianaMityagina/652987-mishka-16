@@ -1,0 +1,51 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  border: 1px solid #ececec;
+}
+
+.video__title {
+  position: relative;
+
+  width: 126px;
+  margin: 0;
+  padding: 0 0 0 90px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 34px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.video__description-wrapper {
+  padding: 0 0 0 28px;
+}
+
+.video__description {
+  margin: 0 0 28px 0;
+  padding: 0;
+  width: 185px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.video__button {
+  font-size: 17px;
+  line-height: 16px;
+}

@@ -1,0 +1,54 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 22px 0 22px 0;
+}
+
+.main-nav__logo {
+  padding: 0;
+  margin: 0 auto 20px auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -30px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.main-nav__wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

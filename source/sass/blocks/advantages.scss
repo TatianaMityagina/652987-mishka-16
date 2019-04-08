@@ -1,0 +1,137 @@
+.advantages {
+  margin: 32px 0 58px 0;
+  padding: 0;
+}
+
+.advantages__title {
+  margin: 0 0 86px 0;
+  padding: 0 0 0 30px;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages__item {
+  display: block;
+  margin: 0 0 83px 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.advantages__item--ecology {
+  position: relative;
+
+  width: 175px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 32px;
+    height: 37px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--style {
+  position: relative;
+
+  width: 200px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--likes {
+  position: relative;
+
+  width: 182px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--handmade {
+  position: relative;
+
+  width: 211px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--support {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--gift {
+  position: relative;
+
+  margin: 0;
+  width: 200px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -55px;
+    left: 8px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}

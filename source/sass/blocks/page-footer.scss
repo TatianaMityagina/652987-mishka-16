@@ -1,10 +1,17 @@
 .page-footer {
   background-color: #f1f1f1;
+}
 
+.page-footer__content-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
@@ -14,8 +21,4 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-}
-
-.page-footer__social {
-  border-bottom: 1px solid #e5e5e5;
 }

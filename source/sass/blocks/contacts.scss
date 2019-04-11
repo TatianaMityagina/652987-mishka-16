@@ -1,6 +1,8 @@
 .contacts {
   position: relative;
-  padding: 42px 0 39px 0;
+
+  padding-top: 42px;
+  padding-bottom: 39px;
 
   &::before {
     position: absolute;

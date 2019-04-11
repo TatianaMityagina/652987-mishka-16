@@ -1,3 +1,10 @@
 .container {
   margin: 0 30px;
+  min-width: 320px;
+  max-width: 1150px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 50px;
+  }
 }

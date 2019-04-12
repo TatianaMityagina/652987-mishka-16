@@ -21,7 +21,7 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;

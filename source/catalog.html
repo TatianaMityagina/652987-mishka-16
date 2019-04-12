@@ -11,33 +11,44 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-wrapper">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
         </div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--search" href="#">
-                <span class="user-list__link-text">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--cart" href="#">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="#">
+              <span class="user-list__link-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="#">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__stock-list stock-navigation">
+          <li class="stock-navigation__item">
+            <a class="stock-navigation__link" href="#">Новые поступления</a>
+          </li>
+          <li class="stock-navigation__item">
+            <a class="stock-navigation__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <p class="main-nav__text">Бесплатная доставка по России</p>
       </nav>
     </header>
 

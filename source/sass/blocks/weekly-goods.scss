@@ -19,6 +19,7 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
       left: -50px;
+
       height: 17px;
       width: 668px;
       background-size: 668px 17px;
@@ -48,6 +49,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 150px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .weekly-goods__note {
@@ -66,18 +71,22 @@
     font-size: 17px;
     line-height: 17px;
   }
-}
 
-.weekly-goods__presentation {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: $desktop-width) {
+    margin-right: 55px;
   }
 }
 
 .weekly-goods__content-wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
   }
 }
 
@@ -95,18 +104,41 @@
   padding: 0;
 }
 
-.weekly-goods__image {
-  margin: 0 0 27px 0;
-  padding: 0;
+.weekly-goods__image-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 24px;
+
     margin: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+    top: 0;
+    right: 24px;
+
+    width: 525px;
+    height: 636px;
   }
 }
 
-.weekly-goods__card {
+.weekly-goods__image {
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
-    margin: -110px 0 0 0;
+    width: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
   }
 }
 

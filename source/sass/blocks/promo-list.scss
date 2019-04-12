@@ -41,6 +41,10 @@
   @media (min-width: $tablet-width) {
     width: 334px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
 }
 
 .promo-list__link--interior {

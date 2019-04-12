@@ -1,0 +1,26 @@
+.stock-navigation {
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 500px;
+  }
+}
+
+.stock-navigation__item {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+  }
+}
+
+.stock-navigation__link {
+  display: block;
+
+  color: #000000;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}

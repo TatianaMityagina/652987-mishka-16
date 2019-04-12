@@ -9,7 +9,7 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo">
@@ -18,8 +18,8 @@
           <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
         </div>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -27,7 +27,7 @@
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--search" href="#">
                 <span class="user-list__link-text">Поиск по сайту</span>
@@ -39,7 +39,17 @@
               </a>
             </li>
           </ul>
-        </div>
+
+          <ul class="main-nav__stock-list stock-navigation">
+            <li class="stock-navigation__item">
+              <a class="stock-navigation__link" href="#">Новые поступления</a>
+            </li>
+            <li class="stock-navigation__item">
+              <a class="stock-navigation__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+          <p class="main-nav__text">Бесплатная доставка по России</p>
       </nav>
     </header>
 
@@ -67,36 +77,37 @@
           <p class="weekly-goods__note">Товар недели</p>
         </header>
 
-        <div class="weekly-goods__presentation">
-          <div class="weekly-goods__content-wrapper">
-            <p class="weekly-goods__description">
-              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-              трех размерах.
-            </p>
+        <div class="weekly-goods__content-wrapper">
+          <p class="weekly-goods__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+            трех размерах.
+          </p>
 
-            <table class="weekly-goods__table table-feature">
-              <tr>
-                <td class="table-feature__parameter">Цвет:</td>
-                <td class="table-feature__field">«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td class="table-feature__parameter">Диаметр:</td>
-                <td class="table-feature__field">25 см</td>
-              </tr>
-              <tr>
-                <td class="table-feature__parameter">Высота:</td>
-                <td class="table-feature__field">15 см</td>
-              </tr>
-            </table>
+          <table class="weekly-goods__table table-feature">
+            <tr>
+              <td class="table-feature__parameter">Цвет:</td>
+              <td class="table-feature__field">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="table-feature__parameter">Диаметр:</td>
+              <td class="table-feature__field">25 см</td>
+            </tr>
+            <tr>
+              <td class="table-feature__parameter">Высота:</td>
+              <td class="table-feature__field">15 см</td>
+            </tr>
+          </table>
+
+          <div class="weekly-goods__image-wrapper">
+            <img class="weekly-goods__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка «Тиффани»">
           </div>
-
-          <img class="weekly-goods__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка «Тиффани»">
 
           <div class="weekly-goods__card">
             <p class="weekly-goods__price">Цена: 990 руб.</p>
             <a class="weekly-goods__button button" href="#">Заказать</a>
           </div>
         </div>
+
       </section>
 
       <section class="advantages container">

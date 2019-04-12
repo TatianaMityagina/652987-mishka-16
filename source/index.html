@@ -11,10 +11,13 @@
 
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+        </div>
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -162,11 +165,12 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo container">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Логотип сайта Мишка">
-      </a>
-      <div class="page-footer__social social container">
-        <ul class="social__list">
+      <div class="page-footer__content-wrapper container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Логотип сайта Мишка">
+        </a>
+
+        <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
@@ -189,15 +193,14 @@
             </a>
           </li>
         </ul>
-      </div>
 
-      <div class="page-footer__copyright copyright container">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__icon" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+        <div class="page-footer__copyright copyright container">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__icon" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </div>
       </div>
-
     </footer>
 
     <div class="modal-choice page-choice">

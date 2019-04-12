@@ -1,13 +1,28 @@
 .main-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 320px;
 
-  padding: 22px 0 22px 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 80px;
+
+  border: 1px solid #ececec;
+  border-width: 1px 1px 0 1px;
 }
 
 .main-nav__logo {
   padding: 0;
-  margin: 0 auto 20px auto;
 
   &:hover {
     opacity: 0.6;
@@ -30,8 +45,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 5px;
-    left: -30px;
+    bottom: 5px;
+    left: 67px;
 
     width: 21px;
     height: 20px;

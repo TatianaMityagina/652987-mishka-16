@@ -50,12 +50,21 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 15px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     color: black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
   }
 }
 
@@ -71,6 +80,10 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
   }
 }
 
@@ -102,6 +115,7 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0 0 38px -30px;
   padding: 0;
 

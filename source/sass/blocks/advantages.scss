@@ -10,6 +10,10 @@
 .advantages__title {
   margin: 0 0 86px 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .advantages-list {
@@ -21,6 +25,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
   }
 }
 

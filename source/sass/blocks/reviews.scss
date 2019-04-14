@@ -17,11 +17,19 @@
 .reviews__title {
   margin: 0 0 34px;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .reviews__content {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .reviews__text {

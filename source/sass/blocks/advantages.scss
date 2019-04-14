@@ -1,32 +1,58 @@
 .advantages {
-  margin: 32px 0 58px 0;
-  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
   margin: 0 0 86px 0;
-  padding: 0 0 0 30px;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .advantages-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .advantages__item {
   display: block;
   margin: 0 0 83px 0;
   padding: 0;
+  width: 260px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .advantages__item--ecology {
   position: relative;
-
-  width: 175px;
 
   &::before {
     position: absolute;
@@ -45,8 +71,6 @@
 .advantages__item--style {
   position: relative;
 
-  width: 200px;
-
   &::before {
     position: absolute;
     content: "";
@@ -59,12 +83,14 @@
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .advantages__item--likes {
   position: relative;
-
-  width: 182px;
 
   &::before {
     position: absolute;
@@ -78,12 +104,14 @@
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .advantages__item--handmade {
   position: relative;
-
-  width: 211px;
 
   &::before {
     position: absolute;
@@ -96,6 +124,10 @@
 
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
 }
 
@@ -114,13 +146,16 @@
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .advantages__item--gift {
   position: relative;
 
   margin: 0;
-  width: 200px;
 
   &::before {
     position: absolute;
@@ -133,5 +168,9 @@
 
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 5;
   }
 }

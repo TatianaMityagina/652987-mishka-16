@@ -1,5 +1,16 @@
 .user-list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 400px;
+  }
 }
 
 .user-list__link {
@@ -14,6 +25,11 @@
 
   border: 1px solid #ececec;
   border-width: 1px 1px 0 1px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    background-color: white;
+  }
 }
 
 .user-list__link--search {
@@ -31,6 +47,14 @@
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 0 27px 75px;
+
+    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -51,5 +75,11 @@
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 10px 27px 65px;
+
+    border-left: 1px solid #ececec;
   }
 }

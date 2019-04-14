@@ -1,7 +1,8 @@
 .weekly-goods {
   position: relative;
 
-  padding: 32px 0 36px 0;
+  padding-top: 32px;
+  padding-bottom: 36px;
 
   &::after {
     position: absolute;
@@ -14,24 +15,44 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 320px 7px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 0;
+      left: -50px;
+
+      height: 17px;
+      width: 668px;
+      background-size: 668px 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
   }
 }
 
 .weekly-goods__header {
   padding: 0;
   margin: 0 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .weekly-goods__title {
   margin: 0;
   padding: 0 0 4px 0;
-}
 
-.headline {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
+  @media (min-width: $tablet-width) {
+    padding: 0 150px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .weekly-goods__note {
@@ -43,10 +64,40 @@
   font-weight: bold;
   color: $green-primary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 55px;
+  }
+}
+
+.weekly-goods__content-wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 583px;
+  }
 }
 
 .weekly-goods__description {
+  width: 250px;
   margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .weekly-goods__table {
@@ -54,14 +105,48 @@
   padding: 0;
 }
 
+.weekly-goods__image-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 24px;
+
+    margin: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+    top: -100px;
+    right: 24px;
+
+    width: 525px;
+    height: 636px;
+  }
+}
+
 .weekly-goods__image {
-  margin: 0 0 27px 0;
+  margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
 }
 
 .weekly-goods__price {
   padding: 0;
   margin: 0 0 28px 0;
+  width: 260px;
 
   font-size: 17px;
   line-height: 24px;
@@ -72,4 +157,9 @@
 
 .weekly-goods__button {
   margin: 0 0 36px 0;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }

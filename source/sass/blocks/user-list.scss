@@ -14,6 +14,7 @@
 }
 
 .user-list__link {
+  position: relative;
   display: block;
   padding: 30px 0 30px 75px;
 
@@ -29,6 +30,11 @@
   @media (min-width: $tablet-width) {
     border: none;
     background-color: white;
+  }
+}
+
+.user-list__link-text {
+  @media (min-width: $tablet-width) {
   }
 }
 

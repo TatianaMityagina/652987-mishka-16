@@ -14,7 +14,7 @@
   position: relative;
 
   display: block;
-  padding: 29px 0 29px 29px;
+  padding: 27px 0 27px 29px;
 
   font-size: 19px;
   font-weight: bold;
@@ -40,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     width: 334px;
+    padding-left: 34px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

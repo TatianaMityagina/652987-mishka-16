@@ -1,20 +1,52 @@
 .form-order {
   padding-top: 26px;
   padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 5px;
+  }
 }
 
 .form-order_description {
-  width: 242px;
+  padding: 0 30px;
 
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 680px;
+    padding: 0 50px;
+    margin-bottom: 74px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form-order__fieldset {
   margin: 0;
-  padding: 0;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-order__fieldset--type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.form-order__block-gray {
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+
+    background-color: #f1f1f1;
+  }
 }
 
 .form-order__legend {
@@ -25,12 +57,32 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $green-primary;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 210px;
+  }
+}
+
+.form-order__fieldset--color .form-order__legend {
+  @media (min-width: $tablet-width) {
+    margin-right: 170px;
+  }
 }
 
 .form-order__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.form-order__fieldset--color .form-order__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: space-around;
+    align-content: space-between;
+  }
 }
 
 .form-order__item {
@@ -41,7 +93,21 @@
   font-weight: bold;
   line-height: 18px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 57px;
+
+    font-size: 19px;
+  }
 }
+
+.form-order__fieldset--color .form-order__item {
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
+}
+
 
 .form-order__label-checkbox {
   position: relative;
@@ -80,6 +146,14 @@
 
   border: 2px solid $gray-primary;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -82px;
+    bottom: -15px;
+
+    width: 53px;
+    height: 53px;
+  }
 }
 
 .form-order__radio:checked + .form-order__label-radio::after {
@@ -93,6 +167,14 @@
 
   background-color: #62d1ba;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -66px;
+    top: -2px;
+
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .form-order__list--name .form-order__item {

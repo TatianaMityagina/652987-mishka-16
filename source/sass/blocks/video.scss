@@ -1,16 +1,24 @@
 .video {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  padding-bottom: 44px;
+  padding-bottom: 33px;
+  padding-top: 24px;
   width: 260px;
 
   border: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    padding-top: 0;
+    padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 682px;
+    padding-top: 94px;
+    padding-bottom: 65px;
     width: 1050px;
   }
 }
@@ -19,7 +27,7 @@
   position: relative;
 
   width: 126px;
-  margin: 0;
+  margin: 0 0 24px 0;
   padding: 0 0 0 90px;
 
   font-size: 17px;
@@ -40,29 +48,91 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: -5px;
+      top: -2px;
+      left: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -56px;
+      left: 80px;
     }
   }
 
   @media (min-width: $tablet-width) {
     order: 1;
     width: 500px;
+    padding-left: 105px;
     margin: 0 0 38px 0;
 
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 0;
+    padding-left: 80px;
+    margin-bottom: 34px;
+  }
+}
+
+.video__content-wrapper {
+  position: relative;
+
+  width: 260px;
+  height: 150px;
+  margin-bottom: 28px;
+
+  background-color: #e2e2e2;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.video__play-button {
+  position: absolute;
+  left: 80px;
+  top: 35px;
+
+  width: 101px;
+  height: 77px;
+
+  border: 0;
+  background-image: url("../img/icon-play.svg");
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 283px;
+    top: 180px;
+  }
 }
 
 .video__description-wrapper {
-  padding: 0 0 0 28px;
+  padding: 0 0 0 32px;
 
   @media (min-width: $tablet-width) {
     order: 2;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    padding-left: 80px;
   }
 }
 
 .video__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 24px 0;
   padding: 0;
   width: 185px;
 
@@ -71,20 +141,30 @@
 
   @media (min-width: $tablet-width) {
     width: 580px;
-    margin: 0 0 38px 0;
+    margin: 0 0 34px 0;
 
     font-size: 15px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    margin-bottom: 46px;
+  }
 }
 
 .video__button {
-  width: 190px;
+  width: 192px;
+  padding: 14px 0;
 
   font-size: 17px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
     width: 584px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 }

@@ -1,4 +1,6 @@
 .promo {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   min-height: 373px;
@@ -8,6 +10,35 @@
   background-color: #f9f9f9;
   background-position: center -15%;
   background-repeat: no-repeat;
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      bottom: -12px;
+
+      height: 24px;
+
+      background-size: 768px 24px;
+      background-position-x: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -17px;
+
+      height: 34px;
+
+      background-size: auto 37px;
+      background-position-x: 12px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 685px;
@@ -20,6 +51,9 @@
 
 .promo__title {
   margin-bottom: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 255px;
 
   font-size: 27px;
   line-height: 30px;
@@ -29,6 +63,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 370px;
+    width: 510px;
 
     font-size: 43px;
     line-height: 50px;

@@ -3,16 +3,23 @@
   padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-top: 52px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-left: 175px;
   }
 }
 
 .advantages__title {
-  margin: 0 0 86px 0;
+  margin: 0 0 88px 0;
   padding: 0;
 
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
   }
 }
 
@@ -28,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 130px;
+    width: 700px;
   }
 }
 
@@ -45,6 +52,14 @@
 
   @media (min-width: $tablet-width) {
     width: 334px;
+    margin-bottom: 112px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
 
     font-size: 20px;
     line-height: 22px;
@@ -53,6 +68,7 @@
 
 .advantages__item--ecology {
   position: relative;
+  width: 205px;
 
   &::before {
     position: absolute;
@@ -75,7 +91,7 @@
     position: absolute;
     content: "";
     top: -55px;
-    left: 8px;
+    left: 02px;
 
     width: 47px;
     height: 27px;
@@ -95,11 +111,11 @@
   &::before {
     position: absolute;
     content: "";
-    top: -55px;
+    top: -46px;
     left: 8px;
 
     width: 34px;
-    height: 27px;
+    height: 30px;
 
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
@@ -107,6 +123,8 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
+
+    margin-bottom: 0;
   }
 }
 
@@ -116,8 +134,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: -55px;
-    left: 8px;
+    top: -50px;
+    left: 4px;
 
     width: 35px;
     height: 34px;
@@ -137,8 +155,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: -55px;
-    left: 8px;
+    top: -50px;
+    left: 0;
 
     width: 55px;
     height: 23px;
@@ -160,8 +178,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: -55px;
-    left: 8px;
+    top: -50px;
+    left: 6px;
 
     width: 33px;
     height: 32px;
@@ -172,5 +190,7 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
+
+    margin-bottom: 0;
   }
 }

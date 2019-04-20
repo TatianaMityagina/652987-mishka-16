@@ -37,6 +37,8 @@
 
 .main-nav__logo {
   padding: 0;
+  width: 86px;
+  height: 35px;
 
   &:hover {
     opacity: 0.6;
@@ -47,7 +49,35 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav--open .main-nav__toggle {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 67px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
   position: relative;
   width: 21px;
   height: 20px;
@@ -55,6 +85,7 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &::before {
     position: absolute;

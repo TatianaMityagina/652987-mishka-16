@@ -37,8 +37,6 @@
 
 .main-nav__logo {
   padding: 0;
-  width: 86px;
-  height: 35px;
 
   &:hover {
     opacity: 0.6;
@@ -46,6 +44,21 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.main-nav__logo-image {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 

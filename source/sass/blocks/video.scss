@@ -98,6 +98,21 @@
   }
 }
 
+.video__image {
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
 .video__play-button {
   position: absolute;
   left: 80px;

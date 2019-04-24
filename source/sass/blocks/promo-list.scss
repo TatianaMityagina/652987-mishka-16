@@ -21,14 +21,6 @@
   text-decoration: none;
   color: #ffffff;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
   &::after {
     position: absolute;
     content: "";
@@ -36,6 +28,24 @@
     transform: translateY(-50%);
     background-repeat: no-repeat;
     opacity: 0.5;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -61,6 +71,11 @@
     background-image: url("../img/icon-interior.svg");
     background-size: 40px 62px;
   }
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+  }
 }
 
 .promo-list__link--toy {
@@ -74,6 +89,11 @@
     height: 60px;
     background-image: url("../img/icon-toy.svg");
     background-size: 60px 60px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
   }
 }
 

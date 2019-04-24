@@ -7,6 +7,14 @@
 
   border: 1px solid #ececec;
 
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     width: 668px;
     padding-bottom: 0;
@@ -57,6 +65,14 @@
 .catalog-item__link {
   color: black;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .catalog-item__content-wrapper {
@@ -100,10 +116,12 @@
 }
 
 .catalog-item__total {
+  position: relative;
   width: 204px;
   padding-top: 5px;
 
   border-top: 1px solid #ececec;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -123,25 +141,33 @@
   }
 }
 
-.catalog-item__button {
-  position: relative;
+.catalog-item__icon {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
 
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 18px;
-    left: 185px;
+  width: 20px;
+  height: 19px;
 
-    width: 20px;
-    height: 19px;
+  opacity: 0.2;
 
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2;
+  .catalog-item__total:hover &,
+  .catalog-item__total:active & {
+    fill: #63d1bb;
+    opacity: 1;
+  }
 
-    @media (min-width: $tablet-width) {
-      left: 250px;
-      bottom: 22px;
-    }
+  .catalog-item__total:active & {
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -4px;
+    top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 12px;
+    top: 26px;
   }
 }

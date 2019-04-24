@@ -27,3 +27,14 @@
     display: block;
   }
 }
+
+.page-footer__logo-image {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

@@ -14,4 +14,14 @@
 
   background-color: #ffffff;
   border: 2px solid $gray-primary;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $gray-primary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

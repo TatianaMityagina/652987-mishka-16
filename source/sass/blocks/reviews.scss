@@ -91,7 +91,7 @@
   display: flex;
   margin: 0 0 38px 0;
   padding: 0;
-  max-width: 320px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -109,10 +109,9 @@
 
 .reviews__nav-button {
   position: relative;
-  box-sizing: border-box;
 
   padding: 0;
-  width: 130px;
+  width: 50%;
 
   height: 52px;
   border: 1px solid #ececec;
@@ -122,35 +121,41 @@
   @media (min-width: $tablet-width) {
     border: 0;
   }
-}
-
-.reviews__nav-button--prev::after {
-  position: absolute;
-  content: "";
-  left: 38px;
-  top: 13px;
-
-  width: 50px;
-  height: 26px;
-
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-left-arrow.svg");
-}
-
-.reviews__nav-button--next {
-  border-width: 1px 1px 1px 0;
 
   &::after {
-    position: absolute;
     content: "";
-    right: 40px;
-    top: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 
     width: 50px;
     height: 26px;
 
+    transform: translate(-50%, -50%);
     background-repeat: no-repeat;
-    background-image: url("../img/icon-right-arrow.svg");
+    background-size: 50px 26px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--prev {
+    &::after {
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--next {
+    border-width: 1px 1px 1px 0;
+
+    &::after {
+      background-image: url("../img/icon-right-arrow.svg");
+    }
   }
 }
 

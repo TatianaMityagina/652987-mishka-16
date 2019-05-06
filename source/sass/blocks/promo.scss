@@ -44,7 +44,7 @@
       height: 34px;
 
       background-size: auto 37px;
-      background-position-x: 12px;
+      background-position-x: 28px;
     }
   }
 
@@ -62,6 +62,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 55px;
+
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center bottom;
 
@@ -90,5 +92,13 @@
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 358px;
+    width: 610px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

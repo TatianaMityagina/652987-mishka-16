@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,14 +41,17 @@
 
   &--search {
     @media (min-width: $tablet-width) {
-      padding: 28px 0 27px 75px;
+      padding: 31px 0 26px 75px;
+      margin-left: 372px;
+      width: 82px;
 
-      border-bottom: 1px solid #ececec;
+      border: 1px solid #ececec;
+      border-width: 1px 0 1px 0;
     }
 
     @media (min-width: $desktop-width) {
       padding: 28px 0 30px 0;
-      width: 84px;
+      margin: 0;
 
       border-top: 1px solid #ececec;
     }
@@ -59,13 +61,13 @@
     border-bottom: 1px solid #ececec;
 
     @media (min-width: $tablet-width) {
-      padding: 28px 10px 27px 65px;
+      padding: 32px 60px 30px 83px;
 
-      border-left: 1px solid #ececec;
+      border: 1px solid #ececec;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 33px 95px 30px 83px;
+      padding: 33px 67px 30px 83px;
 
       border-top: 1px solid #ececec;
     }
@@ -75,7 +77,7 @@
 .user-list__icon {
   position: absolute;
   left: 32px;
-  top: 32px;
+  top: 34px;
 
   opacity: 0.2;
 

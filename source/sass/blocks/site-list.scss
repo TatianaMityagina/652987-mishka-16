@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 132px;
+    margin-right: 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,12 +39,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 10px 40px;
+    padding: 20px 42px 0 50px;
+
+    font-size: 15px;
+
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 33px 42px 30px 50px;
+
+    font-size: 17px;
 
     background-color: white;
     border: 1px solid #ececec;
@@ -52,6 +57,10 @@
   }
 
   &--order {
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+
     @media (min-width: $desktop-width) {
       padding: 33px 100px 30px 34px;
     }

@@ -20,14 +20,19 @@
   background-color: white;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 209px 22px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    padding: 19px 208px 14px 50px;
+
+    border-width: 1px 1px 1px 1px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
     left: 500px;
-    z-index: 100;
 
     padding: 0;
     padding-right: 100px;
@@ -171,7 +176,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     order: 2;
-    padding: 10px;
+
+    padding-top: 20px;
     margin: 0;
   }
 
@@ -179,4 +185,20 @@
     order: 4;
     padding-top: 18px;
   }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list-wrapper {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+
+    .main-nav--nojs .main-nav__toggle {
+      display: none;
+    }
+  }
+
+
 }

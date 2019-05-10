@@ -7,7 +7,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -5px;
     left: 0;
 
     height: 7px;
@@ -120,7 +120,7 @@
 
 .weekly-goods__description {
   width: 250px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
 
   @media (min-width: $tablet-width) {
     width: 280px;
@@ -136,9 +136,9 @@
 }
 
 .weekly-goods__table {
-  margin: 0 0 28px 0;
+  margin: 0 0 24px 0;
   padding: 0;
-  width: 300px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -200,7 +200,7 @@
 
 .weekly-goods__price {
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 25px 0;
 
   font-size: 17px;
   line-height: 24px;

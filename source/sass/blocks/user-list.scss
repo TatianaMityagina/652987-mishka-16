@@ -15,7 +15,7 @@
 .user-list__link {
   position: relative;
   display: block;
-  padding: 30px 0 30px 75px;
+  padding: 26px 0 28px 75px;
 
   color: #000000;
   font-size: 17px;
@@ -42,8 +42,8 @@
   &--search {
     @media (min-width: $tablet-width) {
       padding: 31px 0 26px 75px;
-      margin-left: 372px;
-      width: 82px;
+      margin-left: 368px;
+      width: 84px;
 
       border: 1px solid #ececec;
       border-width: 1px 0 1px 0;
@@ -77,9 +77,14 @@
 .user-list__icon {
   position: absolute;
   left: 32px;
-  top: 34px;
+  top: 30px;
 
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    left: 34px;
+    top: 34px;
+  }
 
   .user-list__link:hover &,
   .user-list__link:active & {

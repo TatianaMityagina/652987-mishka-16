@@ -35,7 +35,7 @@
 }
 
 .form-order__fieldset {
-  margin: 0;
+  position: relative;
 
   border: none;
 
@@ -54,8 +54,8 @@
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 80px;
-      margin-bottom: 10px;
+      padding-top: 60px;
+      margin-bottom: 14px;
     }
   }
 
@@ -64,6 +64,25 @@
     flex-direction: column;
     padding: 0;
     margin-bottom: 10px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 228px;
+      bottom: 38px;
+
+      width: 25px;
+      height: 26px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        left: 616px;
+        bottom: 32px;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -77,6 +96,25 @@
     flex-direction: column;
     margin-bottom: 10px;
     padding: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 225px;
+      bottom: 38px;
+
+      width: 32px;
+      height: 26px;
+
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        left: 615px;
+        bottom: 32px;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -95,7 +133,7 @@
       display: flex;
       flex-direction: row;
       padding-top: 50px;
-      padding-bottom: 30px;
+      padding-bottom: 34px;
     }
   }
 }
@@ -105,12 +143,18 @@
     padding-top: 68px;
 
     background-color: #f1f1f1;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+
+      background-color: #f1f1f1;
+    }
   }
 
   &--contacts {
     @media (min-width: $tablet-width) {
-      padding-top: 65px;
-      padding-bottom: 30px;
+      padding-top: 63px;
+      padding-bottom: 24px;
 
       background-color: #f1f1f1;
     }
@@ -143,7 +187,8 @@
     margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 125px;
+      margin-right: 128px;
+      padding-top: 6px;
     }
   }
 
@@ -153,7 +198,7 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
+      padding-top: 6px;
       margin-right: 132px;
     }
   }
@@ -164,7 +209,7 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
+      padding-top: 6px;
       margin-right: 106px;
     }
   }
@@ -186,13 +231,24 @@
   margin: 0;
   padding: 0;
 
+  &--type {
+    @media (min-width: $tablet-width) {
+      width: 400px;
+    }
+  }
+
   &--color {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
-      width: 400px;
-      justify-content: space-around;
-      align-content: space-between;
+      justify-content: space-between;
+      width: 500px;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      width: 500px;
     }
   }
 }
@@ -213,9 +269,20 @@
     font-size: 19px;
   }
 
+  &--type {
+    width: 190px;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+      width: 300px;
+    }
+  }
+
   &--color {
     @media (min-width: $tablet-width) {
-      width: 150px;
+      width: 235px;
+      padding-left: 30px;
     }
   }
 
@@ -229,6 +296,7 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       margin-bottom: 20px;
+      width: 500px;
     }
   }
 }
@@ -249,8 +317,8 @@
   border: 2px solid $gray-primary;
 
   @media (min-width: $tablet-width) {
-    left: -72px;
-    bottom: -16px;
+    left: -80px;
+    bottom: -18px;
 
     width: 54px;
     height: 52px;
@@ -259,9 +327,13 @@
 
 .form-order__checkbox:checked + .form-order__label-checkbox::before {
   background-image: url("../img/icon-tick.svg");
-  background-size:  22px 16px;
+  background-size: 22px 16px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 32px 22px;
+  }
 }
 
 .form-order__label-radio {
@@ -312,7 +384,8 @@
 
 .form-order__label {
   @media (min-width: $tablet-width) {
-    margin-right: 30px;
+    margin-right: 27px;
+    padding-top: 6px;
 
     font-size: 19px;
     line-height: 18px;
@@ -321,7 +394,8 @@
 }
 
 .form-order__input-text {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-bottom: 22px;
   width: 260px;
 
@@ -332,50 +406,31 @@
   border-width: 0 0 2px 0;
 
   @media (min-width: $tablet-width) {
+    flex-shrink: 0;
     padding: 0;
-    padding-bottom: 10px;
-    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    margin-bottom: 16px;
+
 
     font-size: 19px;
     line-height: 18px;
-    color: rgba(68, 68, 68, 0.3);
+
+    background-color: transparent;
   }
 
   &--phone {
-    position: relative;
-
     width: 260px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: 0;
-      bottom: 0;
-
-      width: 25px;
-      height: 25px;
-
-      background-image: url("../img/icon-phone.svg");
-    }
   }
 
   &--email {
-    position: relative;
-
     width: 260px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: 0;
-      bottom: 0;
-
-      width: 25px;
-      height: 25px;
-
-      background-image: url("../img/icon-mail.svg");
-    }
   }
+}
+
+.form-order__input-text::placeholder,
+.form-order__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .form-order__textarea {
@@ -391,7 +446,7 @@
     width: 500px;
     padding-bottom: 88px;
 
-    font-size: 19px
+    font-size: 19px;
   }
 }
 
@@ -399,7 +454,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 46px;
   }
 }
 
@@ -412,6 +468,8 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-bottom: 0;
+    margin-top: 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -420,6 +478,7 @@
 
 .form-order__button {
   width: 260px;
+  padding: 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 230px;

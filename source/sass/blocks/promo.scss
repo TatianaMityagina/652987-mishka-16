@@ -50,10 +50,11 @@
 
   @media (min-width: $tablet-width) {
     min-height: 685px;
-    padding-top: 75px;
+    padding-top: 88px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center bottom;
+    background-size: auto 746px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -75,9 +76,11 @@
 }
 
 .promo__title {
-  margin-bottom: 120px;
+  margin-bottom: 12px;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 25px;
   width: 255px;
 
   font-size: 27px;

@@ -1,9 +1,9 @@
 .advantages {
-  padding-top: 32px;
-  padding-bottom: 58px;
+  padding-top: 34px;
+  padding-bottom: 54px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding-top: 55px;
     padding-bottom: 82px;
   }
 
@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 668px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
 
   @media (min-width: $tablet-width) {
     width: 334px;
-    margin-bottom: 112px;
+    margin-bottom: 110px;
 
     font-size: 20px;
     line-height: 22px;
@@ -64,133 +64,134 @@
     font-size: 20px;
     line-height: 22px;
   }
-}
 
-.advantages__item--ecology {
-  position: relative;
-  width: 205px;
+  &--ecology {
+    position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -55px;
-    left: 8px;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -55px;
+      left: 8px;
 
-    width: 32px;
-    height: 37px;
+      width: 32px;
+      height: 37px;
 
-    background-image: url("../img/icon-feature-flower.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-.advantages__item--style {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -55px;
-    left: 02px;
-
-    width: 47px;
-    height: 27px;
-
-    background-image: url("../img/icon-feature-money.svg");
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    order: 2;
-  }
-}
+  &--style {
+    position: relative;
 
-.advantages__item--likes {
-  position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -55px;
+      left: 02px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -46px;
-    left: 8px;
+      width: 47px;
+      height: 27px;
 
-    width: 34px;
-    height: 30px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+    }
 
-    background-image: url("../img/icon-feature-heart.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $tablet-width) {
-    order: 4;
-
-    margin-bottom: 0;
-  }
-}
-
-.advantages__item--handmade {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -50px;
-    left: 4px;
-
-    width: 35px;
-    height: 34px;
-
-    background-image: url("../img/icon-feature-ball.svg");
-    background-repeat: no-repeat;
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    order: 1;
-  }
-}
+  &--likes {
+    position: relative;
 
-.advantages__item--support {
-  position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -50px;
+      left: 8px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -50px;
-    left: 0;
+      width: 34px;
+      height: 30px;
 
-    width: 55px;
-    height: 23px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+    }
 
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-repeat: no-repeat;
-  }
+    @media (min-width: $tablet-width) {
+      order: 4;
 
-  @media (min-width: $tablet-width) {
-    order: 3;
-  }
-}
-
-.advantages__item--gift {
-  position: relative;
-
-  margin: 0;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -50px;
-    left: 6px;
-
-    width: 33px;
-    height: 32px;
-
-    background-image: url("../img/icon-feature-gift.svg");
-    background-repeat: no-repeat;
+      margin-bottom: 0;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    order: 5;
+  &--handmade {
+    position: relative;
+    width: 212px;
 
-    margin-bottom: 0;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -52px;
+      left: 4px;
+
+      width: 35px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--support {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -52px;
+      left: 0;
+
+      width: 55px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--gift {
+    position: relative;
+    width: 212px;
+
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -52px;
+      left: 6px;
+
+      width: 33px;
+      height: 32px;
+
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+
+      margin-bottom: 0;
+    }
   }
 }

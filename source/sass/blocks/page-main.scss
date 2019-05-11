@@ -1,7 +1,8 @@
 .page-main__header {
   position: relative;
 
-  padding: 55px 0;
+  padding-bottom: 56px;
+  padding-top: 73px;
 
   background-color: #f1f1f1;
 
@@ -31,7 +32,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0 45px 0;
+    padding: 53px 0 45px 0;
     margin: 0;
   }
 
@@ -42,6 +43,8 @@
 }
 
 .page-main__title {
+  margin-top: 0;
+
   font-size: 27px;
   font-family: $font-family-base;
   font-weight: bold;
@@ -55,6 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 36px;
+
     font-size: 53px;
     line-height: 57px;
   }

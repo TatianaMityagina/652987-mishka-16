@@ -162,6 +162,8 @@
 }
 
 .form-order__legend {
+  position: relative;
+
   margin: 0;
   margin-bottom: 35px;
 
@@ -171,6 +173,22 @@
   text-transform: uppercase;
   color: $green-primary;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 62px;
+
+    height: 1px;
+    width: 198px;
+
+    background-color: $green-primary;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 210px;
   }
@@ -179,7 +197,7 @@
     margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 170px;
+      margin-right: auto;
     }
   }
 

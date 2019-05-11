@@ -3,10 +3,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: $gray-secondary;
-  }
 
-  &--index {
-    @media (min-width: $tablet-width) {
+    &--index {
       background-color: #f9f9f9;
     }
   }

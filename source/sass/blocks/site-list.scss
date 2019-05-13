@@ -1,5 +1,6 @@
 .site-list {
   list-style: none;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 525px;
+    margin-right: 0;
   }
 }
 
@@ -28,7 +30,7 @@
   text-decoration: none;
 
   border: 1px solid #ececec;
-  border-width: 1px 1px 0 1px;
+  border-width: 1px 0 0 1px;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -39,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 20px 42px 0 50px;
+    padding: 20px 42px 0 0;
 
     font-size: 15px;
 
@@ -47,13 +49,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 33px 42px 30px 50px;
+    padding-top: 33px;
+    padding-bottom: 30px;
 
     font-size: 17px;
 
-    background-color: white;
     border: 1px solid #ececec;
-    border-width: 1px 0 1px 1px;
+    border-width: 1px 0 0 1px;
   }
 
   &--order {
@@ -62,7 +64,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 33px 100px 30px 34px;
+      padding-left: 45px;
     }
   }
 }

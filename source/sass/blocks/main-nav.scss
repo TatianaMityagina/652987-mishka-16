@@ -80,6 +80,10 @@
   }
 }
 
+.main-nav__toggle {
+  outline: none;
+}
+
 .main-nav__toggle--open {
   position: relative;
   width: 20px;
@@ -93,7 +97,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: -5px;
     left: 67px;
 
     width: 21px;

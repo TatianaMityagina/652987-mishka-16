@@ -65,25 +65,6 @@
     padding: 0;
     margin-bottom: 10px;
 
-    &::after {
-      position: absolute;
-      content: "";
-      left: 228px;
-      bottom: 38px;
-
-      width: 25px;
-      height: 26px;
-
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        left: 616px;
-        bottom: 32px;
-      }
-    }
-
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -96,25 +77,6 @@
     flex-direction: column;
     margin-bottom: 10px;
     padding: 0;
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: 225px;
-      bottom: 38px;
-
-      width: 32px;
-      height: 26px;
-
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        left: 615px;
-        bottom: 32px;
-      }
-    }
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -368,6 +330,7 @@
   border: 2px solid $gray-primary;
   border-radius: 50%;
 
+
   @media (min-width: $tablet-width) {
     left: -82px;
     bottom: -15px;
@@ -446,12 +409,49 @@
 
   &--email {
     width: 260px;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
   }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $green-primary;
+
+    outline: none;
+  }
+}
+
+.form-order__icon {
+  position: absolute;
+  top: 10px;
+  left: 614px;
+
+  display: block;
+
+  opacity: 0.2;
+
+  &--phone {
+    top: 11px;
+    left: 617px;
+  }
+}
+
+.form-order__input-text:hover + .form-order__icon,
+.form-order__input-text:focus + .form-order__icon {
+  fill: $green-primary;
+
+  opacity: 1;
 }
 
 .form-order__input-text::placeholder,
 .form-order__textarea::placeholder {
   color: rgba(68, 68, 68, 0.3);
+
+  &:active {
+    color: rgb(68, 68, 68);
+  }
 }
 
 .form-order__textarea {
@@ -468,6 +468,13 @@
     padding-bottom: 88px;
 
     font-size: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $green-primary;
+
+    outline: none;
   }
 }
 

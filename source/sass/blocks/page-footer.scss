@@ -39,4 +39,9 @@
     fill: #46c1ae;
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    height: 34px;
+  }
 }

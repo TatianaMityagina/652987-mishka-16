@@ -22,14 +22,14 @@
   @media (min-width: $tablet-width) {
     width: 680px;
     padding: 0 50px;
-    margin-bottom: 74px;
+    margin-bottom: 34px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 680px;
+    width: 700px;
     padding: 0;
   }
 }
@@ -45,9 +45,21 @@
   }
 
   &--type {
+    margin-bottom: 25px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 8px;
+      padding-top: 30px;
+      padding-bottom: 42px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 62px;
+    }
+  }
+
+  &--color {
+    margin-bottom: 25px;
   }
 
   &--name {
@@ -55,7 +67,11 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 52px;
-      margin-bottom: 14px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 62px;
     }
   }
 
@@ -68,7 +84,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
   }
 
@@ -97,25 +113,30 @@
       padding-top: 50px;
       padding-bottom: 34px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 62px;
+      margin-bottom: 14px;
+    }
   }
 }
 
 .form-order__block-gray {
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 50px;
+    padding-bottom: 8px;
 
     background-color: #f1f1f1;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding-bottom: 15px;
-
-      background-color: #f1f1f1;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-top: 46px;
   }
 
   &--contacts {
     @media (min-width: $tablet-width) {
-      padding-top: 63px;
+      padding-top: 55px;
       padding-bottom: 24px;
 
       background-color: #f1f1f1;
@@ -127,7 +148,7 @@
   position: relative;
 
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   font-size: 17px;
   font-weight: bold;
@@ -155,11 +176,27 @@
     margin-right: 210px;
   }
 
+  &--type {
+    @media (min-width: $tablet-width) {
+      padding-top: 12px;
+      margin-right: 134px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 77px;
+    }
+  }
+
   &--color {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-right: auto;
+      padding-top: 18px;
+      margin-right: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 70px;
     }
   }
 
@@ -168,7 +205,11 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 128px;
-      padding-top: 6px;
+      padding-top: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 72px;
     }
   }
 
@@ -178,8 +219,12 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      padding-top: 6px;
+      padding-top: 12px;
       margin-right: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
     }
   }
 
@@ -189,8 +234,12 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      padding-top: 6px;
+      padding-top: 12px;
       margin-right: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 56px;
     }
   }
 
@@ -202,6 +251,11 @@
     @media (min-width: $tablet-width) {
       padding-top: 20px;
       margin-right: 128px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 16px;
+      margin-right: 74px;
     }
   }
 }
@@ -221,6 +275,13 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: flex-start;
+      width: 875px;
     }
   }
 
@@ -228,12 +289,17 @@
     @media (min-width: $tablet-width) {
       width: 500px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
   }
 }
 
 .form-order__item {
-  margin-bottom: 44px;
-  padding-left: 64px;
+  position: relative;
+
+  padding: 18px 5px 18px 64px;
 
   font-size: 17px;
   font-weight: bold;
@@ -241,26 +307,31 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 57px;
-
     font-size: 19px;
+    padding-left: 80px;
   }
 
   &--type {
-    width: 190px;
-    margin-bottom: 25px;
+    width: 200px;
+    padding: 10px 5px 10px 64px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 56px;
-      width: 300px;
+      width: 400px;
+      padding-left: 80px;
+      margin-bottom: 30px;
     }
   }
 
   &--color {
+    margin-bottom: 7px;
+
     @media (min-width: $tablet-width) {
-      width: 235px;
-      padding-left: 30px;
+      margin-bottom: 20px;
+      width: 238px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 263px;
     }
   }
 
@@ -273,21 +344,21 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
       width: 500px;
     }
-  }
-}
 
-.form-order__label-checkbox {
-  position: relative;
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
+  }
 }
 
 .form-order__checkbox + .form-order__label-checkbox::before {
   position: absolute;
   content: "";
-  left: -64px;
-  bottom: -10px;
+  left: 0;
+  bottom: 10px;
 
   width: 40px;
   height: 40px;
@@ -295,8 +366,8 @@
   border: 2px solid $gray-primary;
 
   @media (min-width: $tablet-width) {
-    left: -80px;
-    bottom: -18px;
+    left: 0;
+    bottom: 0;
 
     width: 54px;
     height: 52px;
@@ -333,7 +404,7 @@
 
   @media (min-width: $tablet-width) {
     left: -82px;
-    bottom: -15px;
+    bottom: -17px;
 
     width: 53px;
     height: 53px;
@@ -354,7 +425,7 @@
 
   @media (min-width: $tablet-width) {
     left: -66px;
-    top: -2px;
+    top: 0;
 
     width: 22px;
     height: 22px;
@@ -364,7 +435,8 @@
 .form-order__label {
   @media (min-width: $tablet-width) {
     margin-right: 27px;
-    padding-top: 6px;
+    padding-top: 12px;
+    flex-shrink: 1;
 
     font-size: 19px;
     line-height: 18px;
@@ -385,7 +457,6 @@
   border-width: 0 0 2px 0;
 
   @media (min-width: $tablet-width) {
-    flex-shrink: 0;
     padding-top: 8px;
     padding-bottom: 16px;
     padding-left: 18px;
@@ -405,6 +476,10 @@
     @media (min-width: $tablet-width) {
       width: 500px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
   }
 
   &--email {
@@ -412,6 +487,10 @@
 
     @media (min-width: $tablet-width) {
       width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
     }
   }
 
@@ -425,7 +504,7 @@
 
 .form-order__icon {
   position: absolute;
-  top: 10px;
+  top: 6px;
   left: 614px;
 
   display: block;
@@ -433,7 +512,7 @@
   opacity: 0.2;
 
   &--phone {
-    top: 11px;
+    top: 6px;
     left: 617px;
   }
 }
@@ -465,9 +544,23 @@
 
   @media (min-width: $tablet-width) {
     width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+    height: 142px;
+    min-height: 142px;
+    max-height: 142px;
+
     padding-bottom: 88px;
 
     font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+
+    padding-top: 12px;
   }
 
   &:hover,
@@ -481,9 +574,13 @@
 .form-order__rule-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
   }
 }
 
@@ -510,8 +607,13 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
+    margin-right: 150px;
 
     font-size: 17px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 185px;
   }
 }

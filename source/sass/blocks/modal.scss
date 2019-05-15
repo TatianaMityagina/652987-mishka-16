@@ -1,0 +1,140 @@
+.modal__order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  display: none;
+  padding: 28px 30px;
+  height: 336px;
+
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  transform: translate(-50%, -50%);
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__order-title {
+  margin: 0;
+  padding: 0 54px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__order-text {
+  margin: 0;
+  padding: 10px 0 10px 61px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal__order-wrapper {
+  display: flex;
+
+  padding-top: 27px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.modal__order-input:hover + .modal__order-label {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal__order-input:checked + .modal__order-label,
+.modal__order-input:active + .modal__order-label {
+  border: 2px solid $green-primary;
+}
+
+.modal__order-label {
+  font-size: 17px;
+  line-height: 16px;
+  color: $gray-primary;
+  text-transform: uppercase;
+
+  border: 2px solid rgba(68, 68, 68, 0.1);
+
+  &--s {
+    margin-right: 7px;
+    padding: 13px 34px;
+  }
+
+  &--m {
+    margin-right: 7px;
+    padding: 13px 30px;
+  }
+
+  &--l {
+    padding: 13px 33px;
+  }
+}
+
+.modal__button {
+  margin-bottom: 10px;
+  padding: 18px 0;
+  width: 260px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: white;
+
+  background-color: $green-primary;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__order {
+    margin: 0 auto;
+    padding: 32px 50px;
+
+    width: 554px;
+  }
+
+  .modal__order-wrapper {
+    padding-left: 56px;
+  }
+
+  .modal__order-title {
+    padding: 0 0 0 6px;
+    width: 100%;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__order-text {
+    padding: 12px 0 9px 150px;
+
+    font-size: 17px;
+  }
+
+  .modal__order-label {
+    &--s {
+      padding: 13px 48px;
+    }
+
+    &--m {
+      padding: 13px 44px;
+    }
+
+    &--l {
+      padding: 13px 48px;
+    }
+  }
+
+  .modal__button {
+    margin-left: 55px;
+    width: 350px;
+  }
+}

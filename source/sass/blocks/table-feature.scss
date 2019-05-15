@@ -1,3 +1,7 @@
+.table-feature {
+  border-collapse: collapse;
+}
+
 .table-feature__row {
   font-size: 15px;
   line-height: 20px;
@@ -6,11 +10,18 @@
 .table-feature__parameter {
   padding: 8px 10px 10px 0;
 
+  border-bottom: 1px solid #ececec;
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 44px;
   }
+}
+
+.table-feature__field {
+  border-bottom: 1px solid #ececec;
 }

@@ -184,6 +184,28 @@
         </div>
       </section>
 
+      <section class="modal modal__order">
+        <h2 class="modal__order-title">Добавить в корзину</h2>
+        <p class="modal__order-text">Выберите размер:</p>
+        <form class="modal__order-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal__order-wrapper">
+            <div class="modal__order-size">
+              <input type="radio" name="size" id="small" value="small-size" class="visually-hidden modal__order-input" checked="">
+              <label for="small" class="modal__order-label modal__order-label--s">s</label>
+            </div>
+            <div class="modal__order-size">
+              <input type="radio" name="size" id="medium" value="medium-size" class="visually-hidden modal__order-input">
+              <label for="medium" class="modal__order-label modal__order-label--m">m</label>
+            </div>
+            <div class="modal__order-size">
+              <input type="radio" name="size" id="large" value="large-size" class="visually-hidden modal__order-input">
+              <label for="large" class="modal__order-label modal__order-label--l">l</label>
+            </div>
+          </div>
+          <button class="button modal__button" type="submit">Добавить</button>
+        </form>
+      </section>
+
     </main>
 
     <footer class="page-footer">
@@ -229,25 +251,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal-choice page-choice">
-      <form class="page-choice__cart" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="page-choice__title">Добавить в корзину</h2>
-
-        <fieldset class="page-choice__fieldset">
-          <legend class="page-choice__legend">Выберите размер:</legend>
-          <div class="page-choice__wrapper-input">
-            <input class="page-choice__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked="">
-            <label class="page-choice__label" for="size-s">S</label>
-            <input class="page-choice__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
-            <label class="page-choice__label" for="size-m">M</label>
-            <input class="page-choice__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
-            <label class="page-choice__label" for="size-l">L</label>
-          </div>
-        </fieldset>
-        <button class="page-choice__button button" type="submit">Добавить</button>
-      </form>
-    </div>
 
   </body>
 </html>

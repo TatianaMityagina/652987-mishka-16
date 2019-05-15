@@ -103,7 +103,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: -20px;
+    right: 0;
+    bottom: 125px;
   }
 }
 
@@ -117,6 +118,14 @@
   border: 1px solid #ececec;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -134,14 +143,6 @@
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-size: 50px 26px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   &--prev {

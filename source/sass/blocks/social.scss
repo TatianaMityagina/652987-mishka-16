@@ -1,8 +1,9 @@
 .social {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   width: 220px;
-  padding-top: 28px;
+  padding-top: 24px;
   padding-bottom: 17px;
 
   list-style: none;
@@ -10,8 +11,19 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    width: 220px;
 
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-bottom: 0;
+    width: 245px;
   }
 }
 

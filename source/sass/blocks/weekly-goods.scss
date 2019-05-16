@@ -1,7 +1,7 @@
 .weekly-goods {
   position: relative;
 
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 36px;
 
   &::after {
@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
+    padding-top: 68px;
     padding-bottom: 100px;
     padding-left: 48px;
   }

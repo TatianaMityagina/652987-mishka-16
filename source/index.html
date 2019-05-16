@@ -74,25 +74,21 @@
     <main class="page-main">
 
       <section class="promo">
-        <h1 class="promo__title">Милые штуки ручной работы&nbsp;для дома</h1>
-        <ul class="promo__list promo-list">
-          <li class="promo-list__item">
-            <a class="promo-list__link promo-list__link--interior" href="#">
-              <span class="promo-list__text">Предметы интерьера</span>
-              <svg class="promo-list-icon promo-list-icon--interior" width="40" height="62">
-                <use xlink:href="#icon-interior"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo-list__item">
-            <a class="promo-list__link promo-list__link--toy" href="#">
-            <span class="promo-list__text">Детские игрушки</span>
-            <svg class="promo-list-icon promo-list-icon--toy" width="60" height="60">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Милые штуки ручной <br>работы для дома</h2>
+        </div>
+        <div class="promo__button-wrapper">
+          <a class="promo__button promo__button--interior" href="#">Предметы <br>интерьера
+            <svg class="promo__button-icon promo__button-icon--interior" width="40.219px" height="62.411px">
+              <use xlink:href="#icon-interior"></use>
+            </svg>
+          </a>
+          <a class="promo__button promo__button--toy" href="#">Детские <br>игрушки
+            <svg class="promo__button-icon promo__button-icon--toy" width="60px" height="59.62px">
               <use xlink:href="#icon-toy"></use>
             </svg>
-            </a>
-          </li>
-        </ul>
+          </a>
+        </div>
       </section>
 
       <section class="weekly-goods container">
@@ -136,7 +132,7 @@
 
           <div class="weekly-goods__card">
             <p class="weekly-goods__price">Цена: 990 руб.</p>
-            <a class="weekly-goods__button button" href="#">Заказать</a>
+            <a class="weekly-goods__button button button--js" href="#">Заказать</a>
           </div>
         </div>
 
@@ -184,7 +180,7 @@
           <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Предыдущий отзыв"></button>
           <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Следующий отзыв"></button>
         </div>
-        <a class="reviews__button button" href="#">Написать</a>
+        <a class="reviews__button button" href="reviews.html">Написать</a>
       </section>
 
       <section class="contacts container">
@@ -214,7 +210,8 @@
           <img class="contacts__map" src="img/map-mobile@1x.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" width="320px" height="457px" alt="Map">
         </picture>
         <div class="contacts__map-pin"></div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="contacts__map-api" id="map"></div>
+        <a class="contacts__button button" href="feedback.html">Напишите нам</a>
       </section>
 
       <section class="modal modal__order">
@@ -282,7 +279,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <div class="overlay"></div>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

@@ -17,3 +17,21 @@ navToggle.addEventListener("click", function() {
     navMain.style.display = "none";
   }
 });
+
+
+var link = document.querySelector(".button--js");
+var popup = document.querySelector(".modal__order");
+var overlay = document.querySelector(".overlay");
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal--show");
+  overlay.classList.add("overlay--show");
+});
+
+document.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    popup.classList.remove("modal--show");
+    overlay.classList.remove("overlay--show");
+  }
+});

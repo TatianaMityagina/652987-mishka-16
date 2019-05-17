@@ -1,5 +1,4 @@
-  // Меню
-
+// Меню
 var navMain = document.querySelector(".main-nav__list-wrapper");
 var navToggle = document.querySelector(".main-nav__toggle");
 
@@ -18,7 +17,7 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-
+// Модальное окно заказа товар
 var link = document.querySelector(".button--js");
 var popup = document.querySelector(".modal__order");
 var overlay = document.querySelector(".overlay");
@@ -34,4 +33,12 @@ document.addEventListener("keydown", function (evt) {
     popup.classList.remove("modal--show");
     overlay.classList.remove("overlay--show");
   }
+});
+
+// Яндекс карта
+ymaps.ready(init);
+function init () {
+  myMap = new ymaps.Map("map", {
+    center: [59.93863106, 30.32305450],
+    zoom: 17
 });

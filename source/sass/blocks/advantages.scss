@@ -3,12 +3,12 @@
   padding-bottom: 54px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 48px;
     padding-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 60px;
+    padding-top: 56px;
     padding-bottom: 90px;
     padding-left: 175px;
   }
@@ -19,7 +19,12 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 100px;
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -5px;
+    margin-bottom: 102px;
   }
 }
 
@@ -89,13 +94,17 @@
       position: absolute;
       content: "";
       top: -55px;
-      left: 02px;
+      left: 2px;
 
       width: 47px;
       height: 27px;
 
       background-image: url("../img/icon-feature-money.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        top: -53px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -117,6 +126,10 @@
 
       background-image: url("../img/icon-feature-heart.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        top: -47px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -162,6 +175,11 @@
 
       background-image: url("../img/icon-feature-rocket.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        top: -48px;
+        left: -5px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -186,6 +204,10 @@
 
       background-image: url("../img/icon-feature-gift.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        left: 4px;
+      }
     }
 
     @media (min-width: $tablet-width) {

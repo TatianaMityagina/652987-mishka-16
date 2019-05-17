@@ -34,11 +34,3 @@ document.addEventListener("keydown", function (evt) {
     overlay.classList.remove("overlay--show");
   }
 });
-
-// Яндекс карта
-ymaps.ready(init);
-function init () {
-  myMap = new ymaps.Map("map", {
-    center: [59.93863106, 30.32305450],
-    zoom: 17
-});

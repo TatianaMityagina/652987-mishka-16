@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<67bbe07d-03c3-4e74-9947-c85bd0ffb9ff>" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=67bbe07d-03c3-4e74-9947-c85bd0ffb9ff" type="text/javascript"></script>
   </head>
 
   <body>
@@ -25,7 +24,7 @@
               <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button" aria-label="Меню"></button>
+          <button class="main-nav__toggle main-nav__toggle--open main-nav__toggle--nojs" type="button" aria-label="Меню"></button>
         </div>
 
         <div class="main-nav__list-wrapper main-nav__list-wrapper--nojs">
@@ -249,7 +248,7 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-              <svg class="social__link-icon" width="20" height="21">
+              <svg class="social__link-icon" width="22" height="21">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
@@ -282,6 +281,14 @@
     </footer>
     <div class="overlay"></div>
     <script src="js/script.js"></script>
-
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init () {
+        var myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 7
+        });
+      }
+    </script>
   </body>
 </html>

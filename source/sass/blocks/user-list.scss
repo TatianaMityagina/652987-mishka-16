@@ -87,6 +87,10 @@
     top: 34px;
   }
 
+  @media (min-width: $desktop-width) {
+    left: 32px;
+  }
+
   .user-list__link:hover &,
   .user-list__link:active & {
     fill: #63d1bb;

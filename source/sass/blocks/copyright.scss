@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     width: 185px;
-    padding-top: 30px;
+    padding-top: 26px;
   }
 }
 
@@ -24,6 +24,10 @@
   line-height: 18px;
   font-weight: bold;
   vertical-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__link-icon {

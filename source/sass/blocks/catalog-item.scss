@@ -89,7 +89,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 16px;
+    padding-top: 15px;
+    padding-left: 26px;
   }
 }
 
@@ -181,7 +182,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 12px;
-    top: 26px;
+    right: 5px;
+    top: 24px;
   }
 }

@@ -6,6 +6,10 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=67bbe07d-03c3-4e74-9947-c85bd0ffb9ff" type="text/javascript"></script>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async=""></script>
   </head>
 
   <body>
@@ -201,16 +205,18 @@
             </dd>
           </div>
         </dl>
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" width="320px" height="457px" alt="Map">
-        </picture>
-        <div class="contacts__map-pin"></div>
-        <div class="contacts__map-api" id="map"></div>
+        <div class="contacts__map-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" width="320px" height="457px" alt="Map">
+          </picture>
+          <div class="contacts__map-pin"></div>
+          <div class="contacts__map-api" id="map"></div>
+        </div>
         <a class="contacts__button button" href="feedback.html">Напишите нам</a>
       </section>
 
@@ -286,8 +292,20 @@
       function init () {
         var myMap = new ymaps.Map("map", {
           center: [59.938631, 30.323055],
-          zoom: 7
+          zoom: 18
+        }),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: "Большая Конюшенная, д. 19/8, офис 101"
+          }, {
+            iconLayout: "default#image",
+            iconImageHref: "../img/icon-map-pin.svg",
+            iconImageSize: [67, 100],
+            iconImageOffset: [-33, -101]
         });
+
+        myMap.geoObjects
+        .add(myPlacemark)
       }
     </script>
   </body>

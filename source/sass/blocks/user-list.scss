@@ -60,17 +60,11 @@
     border-bottom: 1px solid #ececec;
 
     @media (min-width: $tablet-width) {
-      padding: 32px 0 30px 0;
-      width: 264px;
-
-      text-align: end;
+      padding: 32px 0 30px 82px;
+      width: 266px;
 
       border: 1px solid #ececec;
       border-width: 0 0 0 1px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 33px 0 30px 0;
     }
   }
 }

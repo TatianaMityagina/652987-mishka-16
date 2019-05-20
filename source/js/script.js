@@ -40,7 +40,10 @@ if (link && popup) {
 
 // Карта Яндекс
 
-ymaps.ready(init);
+var map = document.querySelector("#map");
+
+if (map) {
+  ymaps.ready(init);
   function init () {
     var myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
@@ -59,3 +62,4 @@ ymaps.ready(init);
     myMap.geoObjects
     .add(myPlacemark)
   }
+}

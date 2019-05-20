@@ -16,7 +16,7 @@
     margin-bottom: 56px;
     margin-right: 50px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }

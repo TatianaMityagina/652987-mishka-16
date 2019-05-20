@@ -79,18 +79,21 @@
 }
 
 .promo__title {
+  margin: 0 auto;
+  padding-top: 83px;
+  padding-bottom: 192px;
+  width: 255px;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: black;
   text-align: center;
 
-  margin: 0;
-  padding: 83px 30px 192px 30px;
-
   @media (min-width: $tablet-width) {
     padding-top: 153px;
     padding-bottom: 484px;
+    width: 500px;
 
     font-size: 43px;
     line-height: 50px;
@@ -98,6 +101,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 470px;
+    width: 620px;
 
     font-size: 53px;
     line-height: 57px;

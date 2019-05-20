@@ -39,6 +39,7 @@ if (link && popup) {
 }
 
 // Карта Яндекс
+
 ymaps.ready(init);
   function init () {
     var myMap = new ymaps.Map("map", {

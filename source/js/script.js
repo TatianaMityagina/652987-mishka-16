@@ -18,17 +18,21 @@ navToggle.addEventListener("click", function() {
 });
 
 // Модальное окно заказа товар
-var link = document.querySelector(".button--js");
+var links = document.querySelectorAll(".button--js");
 var popup = document.querySelector(".modal__order");
 
-if (link && popup) {
+if (links.length && popup) {
   var overlay = document.querySelector(".overlay");
 
-  link.addEventListener("click", function (evt) {
+  for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+
+    link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal--show");
     overlay.classList.add("overlay--show");
-  });
+    });
+  }
 
   document.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
